@@ -1,0 +1,11 @@
+my_chatgpt_website/
+│
+├── index.html          # Home Screen
+├── chat.html           # Chat Screen
+├── map.html            # Interactive Map Screen
+├── notifications.html  # Notifications Screen
+├── settings.html       # Settings Screen
+├── css/
+│   └── styles.css      # CSS Styles
+└── js/
+    └── scripts.js      # JavaScript Functions
