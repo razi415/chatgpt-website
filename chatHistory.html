@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat History</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .phone-frame {
+            width: 375px;
+            height: 812px;
+            background-color: #000;
+            border-radius: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .screen {
+            width: 100%;
+            height: 100%;
+            background-color: #fdfdfd;
+            border-radius: 35px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .date {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #5a4a42;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            width: 80%;
+            padding: 10px;
+            margin: 0 auto 20px;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            position: relative;
+        }
+
+        .search-bar img {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        .chat {
+            font-size: 14px;
+            color: #5a4a42;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .chat-icons {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .chat-icons img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .arrow-down {
+            width: 24px;
+            height: 24px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="phone-frame">
+        <div class="screen">
+            <div class="date">תאריך<br>3.9.24</div>
+            <h1>דף היסטוריית שיחות</h1>
+            <div class="search-bar">
+                <input type="text" placeholder=""
+                    style="border: none; width: calc(100% - 40px); padding: 10px 10px; outline: none;">
+                <img src="search_icon.png" alt="Search Icon">
+            </div>
+            <div class="chat">
+                <div class="chat-icons">
+                    <img src="play.png" alt="Play Icon">
+                    <img src="gr.png" alt="Delete Icon">
+                </div>
+                <div>שיחה 1:</div>
+                <div>3 בספטמבר 2024, 10:05<br>שורה ראשונה של השיחה: איך אני משפר את הפרויקט שלי?</div>
+            </div>
+            <div class="chat">
+                <div class="chat-icons">
+                    <img src="play.png" alt="Play Icon">
+                    <img src="gr.png" alt="Delete Icon">
+                </div>
+                <div>שיחה 2:</div>
+                <div>2 בספטמבר 2024, 15:30<br>מה הם הצעדים לשיפור ממשק המשתמש?</div>
+            </div>
+            <div class="chat">
+                <div class="chat-icons">
+                    <img src="play.png" alt="Play Icon">
+                    <img src="gr.png" alt="Delete Icon">
+                </div>
+                <div>שיחה 3:</div>
+                <div>1 בספטמבר 2024, 09:00<br>האם אפשר לשמור שיחה לשימוש עתידי?</div>
+            </div>
+            <img src="arrow_down_icon.png" alt="Arrow Down" class="arrow-down">
+            <div class="footer">REALLYGREATSITE.COM</div>
+        </div>
+    </div>
+</body>
+
+</html>

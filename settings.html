@@ -1,34 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatGPT - Settings</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>ChatGPT Setup</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background2.png');
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 350px;
+            height: 650px;
+            background-image: url('path_to_image.png');
+            /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            text-align: center;
+        }
+
+        .container h1 {
+            color: #4cc9f0;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .container h2 {
+            color: #4cc9f0;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .container p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .container .chatbot-icon {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .container .more-info {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        .container .website-link {
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            font-size: 12px;
+            color: #cccccc;
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Settings</h1>
-    </header>
-
-    <section id="settings">
-        <h2>Customize Your Experience</h2>
-        <form>
-            <label for="theme">Select Theme:</label>
-            <select id="theme" name="theme">
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
-            </select>
-
-            <label for="fontSize">Font Size:</label>
-            <input type="range" id="fontSize" name="fontSize" min="12" max="24">
-
-            <button type="submit">Save Settings</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
-    </footer>
+    <div class="container">
+        <h1>Welcome to chatgpt</h1>
+        <h2>הגדרות</h2>
+        <button>התאמה אישית של ממשק<br>שינוי צבעי ממשק, גופנים, וסידור אלמנטים</button><br><br><br><br><br>
+        <button>הגדרות שיחה והתרעות<br>ניהול התרעות והיסטוריית שיחות</button><br><br><br><br><br>
+        <button>ניהול חשבון<br>עדכון פרטי חשבון ושינוי סיסמה</button><br><br><br><br><br>
+        <button>שיתוף והתקנים חיצוניים<br>חיבור לרשתות חברתיות ושיתוף שיחות</button>
+        <img src="chatbot_icon.png" alt="Chatbot Icon" class="chatbot-icon">
+        <!-- Replace with your chatbot icon image -->
+        <div class="more-info">MORE INFO</div>
+        <a href="https://www.reallygreatsite.com" class="website-link">www.reallygreatsite.com</a>
+    </div>
 </body>
+
 </html>
